@@ -1,0 +1,17 @@
+@media (prefers-color-scheme: dark) {
+  iframe {
+    filter: invert();
+  }
+
+  body {
+    background-color: rgb(47, 47, 48);
+  }
+
+  #chatling-open-chat-icon div {
+    background-color: rgb(225, 238, 106) !important;
+  }
+
+  svg path {
+    fill: rgb(47, 47, 48);
+  }
+}
