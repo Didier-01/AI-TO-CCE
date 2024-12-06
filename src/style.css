@@ -1,10 +1,18 @@
+body {
+  margin: 0;
+}
+
+#app {
+  background-image: url('/WhatsApp Image 2024-12-07 at 01.13.27 (1).jpeg');
+  background-position: center;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 @media (prefers-color-scheme: dark) {
   iframe {
     filter: invert();
-  }
-
-  body {
-    background-color: rgb(47, 47, 48);
   }
 
   #chatling-open-chat-icon div {
