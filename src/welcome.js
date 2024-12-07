@@ -1,3 +1,5 @@
+import Typewriter from 'typewriter-effect/dist/core';
+
 if (!localStorage.getItem('show-welcome')) {
   showWelcomeEl();
 
@@ -11,19 +13,38 @@ if (!localStorage.getItem('show-welcome')) {
 }
 
 function showWelcomeEl() {
-  document.querySelector('#app').innerHTML = `
-    <div class="welcome">
+  document.querySelector('#app').innerHTML = `<div class="welcome">
       <button class="close">X</button>
       <h1>🌟 Welcome to the MPC Class Chatbot! 🌟</h1>
-      <p>
-        Hello and welcome! I'm here to share fun and interesting stories about
-        our classmates in the MPC class. Whether you want to learn more about
-        your peers or share your own experiences, this is the perfect place to
-        connect!
-      </p>
-      <p>
-        Feel free to ask me about your classmates' stories, and let's
-        celebrate our unique community together!
-      </p>
+      <p></P>
     </div>`;
+
+  const p = document.querySelector('.welcome p');
+  const typewriter = new Typewriter(p, {
+    delay: 75,
+    loop: false,
+  });
+
+  const p1 = `Hello and welcome! I'm here to share fun and interesting stories about
+        our classmates in the <strong>MPC</strong> class.`;
+
+  const p2 = `Whether you want to learn more about
+        your peers or share your own experiences, this is the perfect place to
+        connect!`;
+
+  const p3 = `Feel free to ask me about your classmates' stories, and let's
+        celebrate our unique community together!`;
+
+  typewriter
+    .pauseFor(2500)
+    .typeString(p1)
+    .pauseFor(1500)
+    .deleteAll(10)
+    .pauseFor(1500)
+    .typeString(p2)
+    .pauseFor(1500)
+    .deleteAll(10)
+    .pauseFor(1500)
+    .typeString(p3)
+    .start();
 }
