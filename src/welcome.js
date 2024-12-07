@@ -13,7 +13,7 @@ if (!localStorage.getItem('show-welcome')) {
 }
 
 function showWelcomeEl() {
-  document.querySelector('#app').innerHTML = `<div class="welcome">
+  document.querySelector('#app').innerHTML += `<div class="welcome">
       <button class="close">X</button>
       <h1>🌟 Welcome to the MPC Class Chatbot! 🌟</h1>
       <p></P>
@@ -28,12 +28,9 @@ function showWelcomeEl() {
   const p1 = `Hello and welcome! I'm here to share fun and interesting stories about
         our classmates in the <strong class="wrong">PCB</strong>`;
 
-  const p2 = `Whether you want to learn more about
-        your peers or share your own experiences, this is the perfect place to
-        connect!`;
+  const mpc = '<strong class="right">MPC</strong> class.';
 
-  const p3 = `Feel free to ask me about your classmates' stories, and let's
-        celebrate our unique community together!`;
+  const buyMeAcoffee = `Click <a href="tel:*182*8*1*1312853%23">here</a> to contribute to our MOMO code : <strong class="strong">1312853</strong>`;
 
   typewriter
     .pauseFor(2500)
@@ -41,14 +38,10 @@ function showWelcomeEl() {
     .pauseFor(1000)
     .deleteChars(3)
     .pauseFor(1000)
-    .typeString('<strong class="right">MPC</strong> class.')
+    .typeString(mpc)
     .pauseFor(1500)
-    .typeString('<hr>')
+    .deleteAll(1)
     .pauseFor(1500)
-    .typeString(p2)
-    .pauseFor(1500)
-    .typeString('<hr>')
-    .pauseFor(1500)
-    .typeString(p3)
+    .typeString(buyMeAcoffee)
     .start();
 }
