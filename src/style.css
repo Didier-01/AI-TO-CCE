@@ -67,6 +67,18 @@
   font-size: 1.3rem;
 }
 
+.wrong {
+  color: red;
+}
+
+.right {
+  color: #055f52;
+}
+
+hr {
+  color: #055f52;
+}
+
 @media (prefers-color-scheme: dark) {
   iframe {
     filter: invert();

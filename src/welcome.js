@@ -26,7 +26,7 @@ function showWelcomeEl() {
   });
 
   const p1 = `Hello and welcome! I'm here to share fun and interesting stories about
-        our classmates in the <strong>MPC</strong> class.`;
+        our classmates in the <strong class="wrong">PCB</strong>`;
 
   const p2 = `Whether you want to learn more about
         your peers or share your own experiences, this is the perfect place to
@@ -38,12 +38,16 @@ function showWelcomeEl() {
   typewriter
     .pauseFor(2500)
     .typeString(p1)
+    .pauseFor(1000)
+    .deleteChars(3)
+    .pauseFor(1000)
+    .typeString('<strong class="right">MPC</strong> class.')
     .pauseFor(1500)
-    .deleteAll(10)
+    .typeString('<hr>')
     .pauseFor(1500)
     .typeString(p2)
     .pauseFor(1500)
-    .deleteAll(10)
+    .typeString('<hr>')
     .pauseFor(1500)
     .typeString(p3)
     .start();
