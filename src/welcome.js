@@ -30,7 +30,7 @@ function showWelcomeEl() {
 
   const mpc = '<strong class="right">MPC</strong> class.';
 
-  const buyMeAcoffee = `Click <a href="tel:*182*8*1*1312853%23">here</a> to contribute to our MOMO code : <strong class="strong">1312853</strong>`;
+  const buyMeAcoffee = `Click <a href="tel:*182*8*1*1312853%23">here</a> to buy me a coffee using our MOMO Pay code : <strong class="strong">1312853</strong>`;
 
   typewriter
     .pauseFor(2500)
