@@ -4,4 +4,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       <h1>🌟 Welcome to the MPC Class Chatbot! 🌟</h1>
       <p></P>
     </div>`;const w=document.querySelector(".welcome p");new ge(w,{delay:75,loop:!1}).pauseFor(2500).typeString(`Hello and welcome! I'm here to share fun and interesting stories about
-        our classmates in the <strong class="wrong">PCB</strong>`).pauseFor(1e3).deleteChars(3).pauseFor(1e3).typeString('<strong class="right">MPC</strong> class.').pauseFor(1500).deleteAll(1).pauseFor(1500).typeString('Click <a href="tel:*182*8*1*1312853%23">here</a> to contribute to our MOMO code : <strong class="strong">1312853</strong>').start()}
+        our classmates in the <strong class="wrong">PCB</strong>`).pauseFor(1e3).deleteChars(3).pauseFor(1e3).typeString('<strong class="right">MPC</strong> class.').pauseFor(1500).deleteAll(1).pauseFor(1500).typeString('Click <a href="tel:*182*8*1*1312853%23">here</a> to buy me a coffee using our MOMO Pay code : <strong class="strong">1312853</strong>').start()}
