@@ -13,10 +13,13 @@ if (!localStorage.getItem('show-welcome')) {
 }
 
 function showWelcomeEl() {
-  document.querySelector('#app').innerHTML += `<div class="welcome">
-      <button class="close">X</button>
-      <h1>🌟 Welcome to the MPC Class Chatbot! 🌟</h1>
-      <p></P>
+  document.querySelector('#app').innerHTML += `
+    <div>
+      <div class="welcome">
+        <button class="close">X</button>
+        <h1>🌟 Welcome to the MPC Class Chatbot! 🌟</h1>
+        <p></P>
+      </div>
     </div>`;
 
   const p = document.querySelector('.welcome p');
