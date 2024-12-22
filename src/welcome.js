@@ -17,7 +17,7 @@ function showWelcomeEl() {
     <div>
       <div class="welcome">
         <button class="close">X</button>
-        <h1>🌟 Welcome to the MPC Class Chatbot! 🌟</h1>
+        <h1>🌟 IMADE THIS TO THANK CCE🌟</h1>
         <p></P>
       </div>
     </div>`;
@@ -28,12 +28,10 @@ function showWelcomeEl() {
     loop: false,
   });
 
-  const p1 = `Hello and welcome! I'm here to share fun and interesting stories about
-        our classmates in the <strong class="wrong">PCB</strong>`;
+  const p1 = `ndashimira buriwese wamfashije ndwaje pet frer IMANA ibahe nukuri <strong class="wrong">ndabemer</strong>`;
 
-  const mpc = '<strong class="right">MPC</strong> class.';
-
-  const buyMeAcoffee = `Click <a href="tel:*182*8*1*1312853%23">here</a> to buy me a coffee using our MOMO Pay code : <strong class="strong">1312853</strong>`;
+  const mpc = '<strong class="right">ndabakunda</strong>.';
+  
 
   typewriter
     .pauseFor(2500)
